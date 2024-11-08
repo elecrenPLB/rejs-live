@@ -23,6 +23,26 @@ function newVariables() {
   console.log(name) // "Jean"
 }
 
+function constVariables() {
+  const name = "Jean"
+  // const name = "Jean" => Erreur
+}
+
 export const Variables = () => {
-  return <BackTitle title="Variables" />
+  return (
+    <div>
+      <BackTitle title="Variables" />
+      <div className="flex items-center gap-4 mt-6">
+        <button className="btn btn-primary" onClick={oldVariables}>
+          Exécuter var
+        </button>
+        <button className="btn btn-primary" onClick={newVariables}>
+          Exécuter let
+        </button>
+        <button className="btn btn-primary" onClick={constVariables}>
+          Exécuter const
+        </button>
+      </div>
+    </div>
+  )
 }
