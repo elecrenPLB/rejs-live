@@ -87,6 +87,48 @@ export const Home = () => {
           </Link>
         </li>
       </ul>
+      <ul className="mt-6 flex flex-wrap items-center gap-4">
+        <li>
+          <Link to="/evenements" className="btn btn-outline">
+            Événements
+          </Link>
+        </li>
+        <li>
+          <Link to="/state" className="btn btn-outline">
+            State
+          </Link>
+        </li>
+        <li>
+          <Link to="/re-rendering" className="btn btn-outline">
+            Re-rendering
+          </Link>
+        </li>
+        <li>
+          <Link to="/props-vs-state" className="btn btn-outline">
+            Props vs State
+          </Link>
+        </li>
+        <li>
+          <Link to="/form-data" className="btn btn-outline">
+            Form Data
+          </Link>
+        </li>
+        <li>
+          <Link to="/inputs-controles" className="btn btn-outline">
+            Inputs Contrôlés
+          </Link>
+        </li>
+        <li>
+          <Link to="/use-ref" className="btn btn-outline">
+            Use Ref
+          </Link>
+        </li>
+        <li>
+          <Link to="/react-dev-tools" className="btn btn-outline">
+            React Dev Tools
+          </Link>
+        </li>
+      </ul>
     </div>
   )
 }

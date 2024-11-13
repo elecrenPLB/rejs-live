@@ -20,6 +20,14 @@ import { CssInJs } from "./pages/CssInJs.jsx"
 import { TailwindCss } from "./pages/TailwindCss.jsx"
 import { CssModules } from "./pages/CssModules.jsx"
 import { Children } from "./pages/Children.jsx"
+import { EventsDemo } from "./pages/EventsDemo.jsx"
+import { StateDemo } from "./pages/StateDemo.jsx"
+import { ReRenderingDemo } from "./pages/ReRenderingDemo.jsx"
+import { PropsStateDemo } from "./pages/PropsStateDemo.jsx"
+import { FormDataDemo } from "./pages/FormDataDemo.jsx"
+import { ControlledInputs } from "./pages/ControlledInputs.jsx"
+import { UseRefDemo } from "./pages/UseRefDemo.jsx"
+import { ReactDevToolsDemo } from "./pages/ReactDevToolsDemo.jsx"
 
 const router = createBrowserRouter([
   {
@@ -93,6 +101,38 @@ const router = createBrowserRouter([
       {
         path: "/children",
         element: <Children />
+      },
+      {
+        path: "/evenements",
+        element: <EventsDemo />
+      },
+      {
+        path: "/state",
+        element: <StateDemo />
+      },
+      {
+        path: "/re-rendering",
+        element: <ReRenderingDemo />
+      },
+      {
+        path: "/props-vs-state",
+        element: <PropsStateDemo />
+      },
+      {
+        path: "/form-data",
+        element: <FormDataDemo />
+      },
+      {
+        path: "/inputs-controles",
+        element: <ControlledInputs />
+      },
+      {
+        path: "/use-ref",
+        element: <UseRefDemo />
+      },
+      {
+        path: "/react-dev-tools",
+        element: <ReactDevToolsDemo />
       }
     ],
     element: <RootLayout />
