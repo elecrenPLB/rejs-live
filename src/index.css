@@ -5,3 +5,11 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+.btn-example-global {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
