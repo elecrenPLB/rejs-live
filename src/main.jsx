@@ -28,6 +28,12 @@ import { FormDataDemo } from "./pages/FormDataDemo.jsx"
 import { ControlledInputs } from "./pages/ControlledInputs.jsx"
 import { UseRefDemo } from "./pages/UseRefDemo.jsx"
 import { ReactDevToolsDemo } from "./pages/ReactDevToolsDemo.jsx"
+import { HooksDemo } from "./pages/HooksDemo.jsx"
+import { UseEffectDemo } from "./pages/UseEffectDemo.jsx"
+import { ApiUseEffect } from "./pages/ApiUseEffect.jsx"
+import { ApiLibrary } from "./pages/ApiLibrary.jsx"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 
 const router = createBrowserRouter([
   {
@@ -133,14 +139,35 @@ const router = createBrowserRouter([
       {
         path: "/react-dev-tools",
         element: <ReactDevToolsDemo />
+      },
+      {
+        path: "/hooks",
+        element: <HooksDemo />
+      },
+      {
+        path: "/use-effect",
+        element: <UseEffectDemo />
+      },
+      {
+        path: "/use-effect-api",
+        element: <ApiUseEffect />
+      },
+      {
+        path: "/api-librairie",
+        element: <ApiLibrary />
       }
     ],
     element: <RootLayout />
   }
 ])
 
+const queryClient = new QueryClient()
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   </StrictMode>
 )

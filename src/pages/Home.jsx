@@ -129,6 +129,28 @@ export const Home = () => {
           </Link>
         </li>
       </ul>
+      <ul className="mt-6 flex flex-wrap items-center gap-4">
+        <li>
+          <Link to="/hooks" className="btn btn-outline">
+            Hooks
+          </Link>
+        </li>
+        <li>
+          <Link to="/use-effect" className="btn btn-outline">
+            Use Effect
+          </Link>
+        </li>
+        <li>
+          <Link to="/use-effect-api" className="btn btn-outline">
+            Use Effect API
+          </Link>
+        </li>
+        <li>
+          <Link to="/api-librairie" className="btn btn-outline">
+            API Library
+          </Link>
+        </li>
+      </ul>
     </div>
   )
 }
