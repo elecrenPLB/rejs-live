@@ -151,6 +151,28 @@ export const Home = () => {
           </Link>
         </li>
       </ul>
+      <ul className="mt-6 flex flex-wrap items-center gap-4">
+        <li>
+          <Link to="/use-reducer" className="btn btn-outline">
+            Use Reducer
+          </Link>
+        </li>
+        <li>
+          <Link to="/react-context" className="btn btn-outline">
+            React Context
+          </Link>
+        </li>
+        <li>
+          <Link to="/redux" className="btn btn-outline">
+            Redux
+          </Link>
+        </li>
+        <li>
+          <Link to="/zustand" className="btn btn-outline">
+            Zustand
+          </Link>
+        </li>
+      </ul>
     </div>
   )
 }
