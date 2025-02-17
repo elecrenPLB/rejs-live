@@ -7,6 +7,6 @@ function numberToString(number) {
 
 const numberToStringArrow = (number) => number.toString()
 
-export const Arrow = () => {
+export function Arrow() {
   return <BackTitle title="Fonctions fléchées" />
 }
