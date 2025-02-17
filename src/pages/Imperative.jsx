@@ -21,7 +21,7 @@ function sumOddDeclarative() {
     .reduce((acc, number) => acc + number, 0)
 }
 
-export const Imperative = () => {
+export function Imperative() {
   return (
     <div>
       <BackTitle title="Imperative vs Déclarative" />

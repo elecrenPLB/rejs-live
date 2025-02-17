@@ -1,15 +1,16 @@
 import { BackTitle } from "../components/BackTitle"
 
-const getData = () =>
-  new Promise((resolve) => setTimeout(() => resolve("data"), 1000))
+function getData() {
+  return new Promise((resolve) => setTimeout(() => resolve("data"), 1000))
+}
 
-const asyncExample = async () => {
+async function asyncExample() {
   const data = await getData()
 
   console.log(data) // Attente de 1 seconde puis console.log(data)
 }
 
-export const Async = () => {
+export function Async() {
   return (
     <div>
       <BackTitle title="Asynchrone avec async/await" />

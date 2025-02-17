@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export const Home = () => {
+export function Home() {
   return (
     <div>
       <ul className="flex flex-wrap items-center gap-4">

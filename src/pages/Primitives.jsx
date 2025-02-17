@@ -1,6 +1,6 @@
 import { BackTitle } from "../components/BackTitle"
 
-const primitivesExample = () => {
+function primitivesExample() {
   let a = 1
   let b = a // => La valeur 1 est copiée dans b. a et b sont indépendants
 
@@ -10,7 +10,7 @@ const primitivesExample = () => {
   console.log(b) // => 66
 }
 
-const referencesExample = () => {
+function referencesExample() {
   const user = { name: "John", age: 25 }
   const user2 = user // => La référence est copiée. user et user2 pointent sur le même objet
 
@@ -20,7 +20,7 @@ const referencesExample = () => {
   console.log(user2.age) // => 40
 }
 
-const referencesExampleArray = () => {
+function referencesExampleArray() {
   const fruits = ["pomme", "banane", "cerise"]
   const fruits2 = fruits // => La référence est copiée. fruits et fruits2 pointent sur le même tableau
 
@@ -30,7 +30,7 @@ const referencesExampleArray = () => {
   console.log(fruits2) // => ["pomme", "banane", "cerise", "fraise"]
 }
 
-export const Primitives = () => {
+export function Primitives() {
   return (
     <div>
       <BackTitle title="Primitives vs Références" />

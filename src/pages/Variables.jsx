@@ -28,7 +28,7 @@ function constVariables() {
   // const name = "Jean" => Erreur
 }
 
-export const Variables = () => {
+export function Variables() {
   return (
     <div>
       <BackTitle title="Variables" />

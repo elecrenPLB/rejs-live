@@ -1,13 +1,13 @@
 import { BackTitle } from "../components/BackTitle"
 
-const destructuringExample = () => {
+function destructuringExample() {
   const user = { name: "John", age: 25 }
   const { name, age } = user
 
   console.log(name, age) // John, 25
 }
 
-const spreadExample = () => {
+function spreadExample() {
   const user = { name: "John", age: 25 }
   const user2 = { ...user, age: 30, city: "Paris" }
 
@@ -15,7 +15,7 @@ const spreadExample = () => {
   console.log(user2) // { name: 'John', age: 30, city: 'Paris' }
 }
 
-const spreadExampleArray = () => {
+function spreadExampleArray() {
   const fruits = ["pomme", "banane", "cerise"]
   const fruits2 = [...fruits, "fraise"]
 
@@ -23,7 +23,7 @@ const spreadExampleArray = () => {
   console.log(fruits2) // ["pomme", "banane", "cerise", "fraise"]
 }
 
-const restExample = (...args) => {
+function restExample(...args) {
   const user = { name: "John", age: 25, city: "Paris" }
   const { name, ...rest } = user
 
@@ -31,7 +31,7 @@ const restExample = (...args) => {
   console.log(args) // [1, 2, 3, 4, 5]
 }
 
-export const Spread = () => {
+export function Spread() {
   return (
     <div>
       <BackTitle title="Spread, rest et destructuration" />
