@@ -24,10 +24,10 @@ function spreadExampleArray() {
 }
 
 function restExample(...args) {
-  const user = { name: "John", age: 25, city: "Paris" }
-  const { name, ...rest } = user
+  const user = { name: "John", age: 25, city: "Paris", country: "France" }
+  const { name, age, ...address } = user
 
-  console.log(name, rest) // John, { age: 25, city: 'Paris' }
+  console.log(name, age, address) // John, 25, { city: 'Paris', country: 'France' }
   console.log(args) // [1, 2, 3, 4, 5]
 }
 
