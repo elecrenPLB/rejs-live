@@ -1,34 +1,10 @@
 import { BackTitle } from "../components/BackTitle"
 
-function primitivesExample() {
-  let a = 1
-  let b = a // => La valeur 1 est copiée dans b. a et b sont indépendants
+function primitivesExample() {}
 
-  b = 66
+function referencesExample() {}
 
-  console.log(a) // => 1
-  console.log(b) // => 66
-}
-
-function referencesExample() {
-  const user = { name: "John", age: 25 }
-  const user2 = user // => La référence est copiée. user et user2 pointent sur le même objet
-
-  user2.age = 40
-
-  console.log(user.age) // => 40
-  console.log(user2.age) // => 40
-}
-
-function referencesExampleArray() {
-  const fruits = ["pomme", "banane", "cerise"]
-  const fruits2 = fruits // => La référence est copiée. fruits et fruits2 pointent sur le même tableau
-
-  fruits2.push("fraise")
-
-  console.log(fruits) // => ["pomme", "banane", "cerise", "fraise"]
-  console.log(fruits2) // => ["pomme", "banane", "cerise", "fraise"]
-}
+function referencesExampleArray() {}
 
 export function Primitives() {
   return (
